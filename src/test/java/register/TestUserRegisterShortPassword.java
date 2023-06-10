@@ -1,9 +1,8 @@
+package register;
+
 import api.User;
-import api.UserClient;
-import api.UserCredentials;
 import api.UserGenerator;
 import extensions.WebDriverFactory;
-import io.restassured.response.ValidatableResponse;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +14,6 @@ import page.StellarBurgers;
 import static org.junit.Assert.assertEquals;
 
 public class TestUserRegisterShortPassword {
-    private UserClient userClient;
     private static User user;
     private WebDriver driver;
     @Before

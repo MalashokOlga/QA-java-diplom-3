@@ -1,3 +1,5 @@
+package login;
+
 import api.User;
 import api.UserClient;
 import api.UserCredentials;
@@ -9,7 +11,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import page.LoginPage;
-import page.RegisterPage;
 import page.StellarBurgers;
 
 import static org.junit.Assert.assertEquals;

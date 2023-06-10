@@ -1,3 +1,5 @@
+package api;
+
 import io.restassured.response.ValidatableResponse;
 import lombok.NonNull;
 

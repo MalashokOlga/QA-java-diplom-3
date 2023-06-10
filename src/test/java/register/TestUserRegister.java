@@ -1,3 +1,5 @@
+package register;
+
 import api.User;
 import api.UserClient;
 import api.UserCredentials;
