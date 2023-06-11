@@ -14,9 +14,7 @@ public class StellarBurgers {
     private final By btnBun = By.xpath(".//*[@class='text text_type_main-default' and text()='Булки']");
     private final By btnSauce = By.xpath(".//*[@class='text text_type_main-default' and text()='Соусы']");
     private final By btnFilling = By.xpath(".//*[@class='text text_type_main-default' and text()='Начинки']");
-    private final By headerBun = By.xpath(".//*[@class='text text_type_main-medium mb-6 mt-10' and text()='Булки']");
-    private final By headerSauce = By.xpath(".//*[@class='text text_type_main-medium mb-6 mt-10' and text()='Соусы']");
-    private final By headerFilling = By.xpath(".//*[@class='text text_type_main-medium mb-6 mt-10' and text()='Начинки']");
+    private final By btnCurrentIngredient = By.xpath(".//*[@class='tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect']/span[@class='text text_type_main-default']");
     public StellarBurgers(WebDriver driver) {
         this.driver = driver;
     }
@@ -38,24 +36,17 @@ public class StellarBurgers {
         Thread.sleep(2000);
         switch (ingredient) {
             case "Булки":
-                if (!(driver.findElement(btnBun).isEnabled())) {driver.findElement(btnBun).click();}
-                if (driver.findElement(headerBun).isDisplayed()) {
-                    currentIngredient = driver.findElement(headerBun).getText();
-                }
+                if (!(driver.findElement(btnBun).isEnabled())) {
+                    driver.findElement(btnBun).click();}
                 break;
             case "Соусы":
                 driver.findElement(btnSauce).click();
-                if (driver.findElement(headerSauce).isDisplayed()) {
-                    currentIngredient = driver.findElement(headerSauce).getText();
-                }
                 break;
             case "Начинки":
                 driver.findElement(btnFilling).click();
-                if (driver.findElement(headerFilling).isDisplayed()) {
-                    currentIngredient = driver.findElement(headerFilling).getText();
-                }
                 break;
         }
-        return currentIngredient;
+        return driver.findElement(btnCurrentIngredient).getText();
     }
+
 }

@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34e94d46-635c-4d86-9bcb-c06c2c3a2e9d" name="Changes" comment="add pom.xml">
+    <list default="true" id="34e94d46-635c-4d86-9bcb-c06c2c3a2e9d" name="Changes" comment="change assertEquals to assertTrue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/login/TestUserLoginBtnLK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/TestUserLoginBtnLK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/login/TestUserLoginBtnLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/TestUserLoginBtnLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/login/TestUserLoginLinkLoginReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/TestUserLoginLinkLoginReg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/login/TestUserLoginLinkLoginResetPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/login/TestUserLoginLinkLoginResetPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/profile/TestGotoConsrtuctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/profile/TestGotoConsrtuctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/profile/TestGotoLogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/profile/TestGotoLogo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/profile/TestGotoProfileLK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/profile/TestGotoProfileLK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page/StellarBurgers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/StellarBurgers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/constructor/TestSwitchIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/constructor/TestSwitchIngredient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Yandex_practicum/Diplom/QA-java-diplom-2"
+    "last_opened_file_path": "D:/Yandex_practicum/Diplom/QA-java-diplom-2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -58,22 +54,7 @@
       <recent name="D:\Yandex_practicum\Diplom\QA-java-diplom-3\src\main\java\api" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestUserRegisterShortPassword">
-    <configuration name="TestGotoLogo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QA-java-diplom-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="profile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="profile" />
-      <option name="MAIN_CLASS_NAME" value="profile.TestGotoLogo" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestSwitchIngredient">
     <configuration name="TestGotoProfileLK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA-java-diplom-3" />
       <extension name="coverage">
@@ -99,6 +80,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="profile" />
       <option name="MAIN_CLASS_NAME" value="profile.TestProfileExit" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSwitchIngredient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QA-java-diplom-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="constructor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="constructor" />
+      <option name="MAIN_CLASS_NAME" value="constructor.TestSwitchIngredient" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,17 +133,17 @@
     <list>
       <item itemvalue="JUnit.TestUserRegister" />
       <item itemvalue="JUnit.TestUserRegisterShortPassword" />
+      <item itemvalue="JUnit.TestSwitchIngredient" />
       <item itemvalue="JUnit.TestProfileExit" />
-      <item itemvalue="JUnit.TestGotoLogo" />
       <item itemvalue="JUnit.TestGotoProfileLK" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestSwitchIngredient" />
         <item itemvalue="JUnit.TestUserRegisterShortPassword" />
         <item itemvalue="JUnit.TestUserRegister" />
         <item itemvalue="JUnit.TestProfileExit" />
         <item itemvalue="JUnit.TestGotoProfileLK" />
-        <item itemvalue="JUnit.TestGotoLogo" />
       </list>
     </recent_temporary>
   </component>
@@ -167,11 +163,19 @@
       <option name="project" value="LOCAL" />
       <updated>1686393091872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="change assertEquals to assertTrue">
+      <created>1686503950509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686503950510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pom.xml" />
+    <MESSAGE value="change assertEquals to assertTrue" />
+    <option name="LAST_COMMIT_MESSAGE" value="change assertEquals to assertTrue" />
   </component>
 </project>

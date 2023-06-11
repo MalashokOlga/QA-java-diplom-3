@@ -29,8 +29,7 @@ public class TestSwitchIngredient {
     @Test
     public void testSwitchIngredient() throws InterruptedException {
         StellarBurgers stellarBurgers = new StellarBurgers(driver);
-        String currentIngredient = stellarBurgers.switchIngredient(ingredient);
-        assertEquals(ingredient, currentIngredient);
+        assertEquals(ingredient, stellarBurgers.switchIngredient(ingredient));
     }
     @After
     public void teardown() {
