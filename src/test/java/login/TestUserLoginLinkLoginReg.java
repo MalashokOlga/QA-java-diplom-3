@@ -14,7 +14,7 @@ import page.LoginPage;
 import page.RegisterPage;
 import page.StellarBurgers;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestUserLoginLinkLoginReg {
     private UserClient userClient;
@@ -39,7 +39,7 @@ public class TestUserLoginLinkLoginReg {
         loginPage.clickLinkRegister();
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.clickLinkLoginReg();
-        assertEquals(true, loginPage.successLogin(UserCredentials.from(user)));
+        assertTrue(loginPage.successLogin(UserCredentials.from(user)));
     }
     @After
     public void teardown() {

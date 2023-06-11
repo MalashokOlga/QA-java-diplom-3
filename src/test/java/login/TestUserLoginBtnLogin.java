@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import page.LoginPage;
 import page.StellarBurgers;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestUserLoginBtnLogin {
     private UserClient userClient;
@@ -35,7 +35,7 @@ public class TestUserLoginBtnLogin {
         StellarBurgers stellarBurgers = new StellarBurgers(driver);
         stellarBurgers.clickBtnLogin();
         LoginPage loginPage = new LoginPage(driver);
-        assertEquals(true, loginPage.successLogin(UserCredentials.from(user)));
+        assertTrue(loginPage.successLogin(UserCredentials.from(user)));
     }
     @After
     public void teardown() {

@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 import page.LoginPage;
 import page.StellarBurgers;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestUserLoginLinkLoginResetPassword {
     private UserClient userClient;
@@ -37,7 +37,7 @@ public class TestUserLoginLinkLoginResetPassword {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickLinkResetPassword();
         loginPage.clickLinkLoginResetPassword();
-        assertEquals(true, loginPage.successLogin(UserCredentials.from(user)));
+        assertTrue(loginPage.successLogin(UserCredentials.from(user)));
     }
     @After
     public void teardown() {

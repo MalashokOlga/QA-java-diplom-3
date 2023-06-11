@@ -14,7 +14,7 @@ import page.LoginPage;
 import page.ProfileLK;
 import page.StellarBurgers;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestGotoLogo {
     private UserClient userClient;
@@ -40,7 +40,7 @@ public class TestGotoLogo {
         stellarBurgers.clickBtnLk();
         ProfileLK profileLK = new ProfileLK(driver);
         profileLK.clickLogo();
-        assertEquals(true, stellarBurgers.successMainPage());
+        assertTrue(stellarBurgers.successMainPage());
     }
     @After
     public void teardown() {

@@ -11,7 +11,7 @@ import page.LoginPage;
 import page.RegisterPage;
 import page.StellarBurgers;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class TestUserRegisterShortPassword {
     private static User user;
@@ -30,7 +30,7 @@ public class TestUserRegisterShortPassword {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.clickLinkRegister();
         RegisterPage registerPage = new RegisterPage(driver);
-        assertEquals(true, registerPage.unsuccessUserRegister(user));
+        assertTrue(registerPage.unsuccessUserRegister(user));
     }
     @After
     public void teardown() {
